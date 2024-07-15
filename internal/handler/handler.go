@@ -22,7 +22,7 @@ func (h *Handler) Init() *gin.Engine {
 		api.GET("/get_order_history", h.GetOrderHistory)
 
 		api.POST("/save_order_book", h.SaveOrderBook)
-		api.POST("/save_order_book", h.SaveOrder)
+		api.POST("/save_order", h.SaveOrder)
 	}
 	return router
 }
